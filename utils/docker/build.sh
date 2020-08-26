@@ -54,7 +54,7 @@ ci_env=`bash <(curl -s https://codecov.io/env)`
 #  - environment variables set (--env)
 #  - host directory containing source mounted (-v)
 #  - working directory set (-w)
-docker run --privileged=true --name=$containerName -ti \
+docker run --privileged=true --name=$containerName \
 	$DNS_SETTING \
 	${docker_opts} \
 	$ci_env \
