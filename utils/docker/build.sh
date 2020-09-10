@@ -16,7 +16,7 @@
 #
 
 set -e
-
+set -x
 if [[ -z "$OS" || -z "$OS_VER" ]]; then
 	echo "ERROR: The variables OS and OS_VER have to be set " \
 		"(eg. OS=ubuntu, OS_VER=16.04)."
